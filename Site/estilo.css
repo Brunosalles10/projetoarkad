@@ -1,63 +1,72 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     background: white;
-    
-    
+
+
+
 }
 
 /*layout*/
-header{
+header {
     background-color: black;
     padding: 8px;
     text-align: center;
-    
+    box-sizing: border-box;
+
 
 }
 
-.imagenlogo{
+.imagenlogo {
     width: 10%;
     padding: 10px;
 }
 
-a, a:visited, a:link{
+a,
+a:visited,
+a:link {
     padding: 8px 12px;
     color: white;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: rgb(173, 25, 149);
     background: #fff;
 }
 
 /* AREA PRINCIPAL */
-main{
-    
+main {
+    width: 1000PX;
+
     width: 100%;
     margin: 0 auto;
     padding: 10px;
 
 }
 
-.imgbanner{
+.imgbanner {
     width: 100%;
- }
+}
 
- .imglateral {
-    width: 100%;
-    
-    
+.imglateral {
+    width: 94%;
 
- }
-section{
-    width: 70%;
-    
+
+
+
+}
+
+section {
+    width: 69%;
+    box-shadow: 0px 0px 10px #333;
+
+
     float: left;
     padding: 10px;
     box-sizing: border-box;
@@ -65,9 +74,9 @@ section{
 
 
 
-aside{
+aside {
     width: 30%;
-    
+    box-shadow: 0px 0px 10px #333;
     float: right;
     padding: 10px;
     box-sizing: border-box;
@@ -77,8 +86,34 @@ aside{
 
 /*FIM DA AREA PRINCIPAL*/
 
+/*INICIO DAS COLUNAS GRID*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    clear: both;
+
+
+}
+
+.grid .coluna img {
+    width: 30%;
+}
+
+.grid .coluna {
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #333;
+
+}
+
+/* FIM DO DISPLAY GRID*/
+
+
 /*INICIO DO RODAPE*/
-footer{
+footer {
     background: black;
     clear: both;
     text-align: center;
@@ -87,40 +122,45 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
-   
-    
-    
-    
-    
+    box-sizing: border-box;
+
+
+
+
+
 
 }
+
 /* FIM DO RODAPE*/
 
 /*PAGINA QUEM SOMOS*/
-h2{
+h2 {
     text-align: center;
-    
+
 
 }
 
 p {
     text-align: center;
-    
+
 }
 
 
-.imgescudo{
+.imgescudo {
     display: block;
     margin: auto;
 }
+/*FIM DA PAGINA QUEM SOMOS*/
 
- 
+@media (max-width: 800px) {
+    header {
+        text-align: center;
+        width: 100%;
+    }
 
+    section,
+    aside {
+        width: 100%;
+    }
 
-
-
-
-
-
-            
-   
+}
