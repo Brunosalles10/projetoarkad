@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="description" content="SITE JORNADA SUBTERRÂNEA">
+    <meta name="description" content="SITE THE ARKAD">
     <link rel="stylesheet" type="text/css" href="estilo.css">
     <link rel="shortcut icon" href="imagens/foguete.png">
 
@@ -29,7 +29,47 @@
     </header><!--fim do cabeçalho-->
 
     <main><!--Inicio area do menu principal-->
-       
+        <div class="formulario">
+            <h2>Entre em Contato</h2>
+
+            <form name="form-cadastro" method="post" action="">
+                <label for="">Digite seu nome: </label>
+                <input type="text" name="nomeCompleto" id="nome" size="50" maxlength="40" placeholder="Nome completo"
+                    autocomplete="off" required>
+                <br>
+                <label for="email">Digite seu email:</label>
+                <input type="email" name="email" id="email" maxlength="50" placeholder="Digite um email válido"
+                    autocomplete="off" required inputmode="email">
+                <br>
+                <label for="dataNascimento">Data Nascimento</label>
+                <input type="date" name="dataNascimento" id="dataNascimento" autocomplete="off">
+                <br>
+                <label for="estadoCivil">Estado Civil:</label>
+                <select name="estadoCivil">
+                    <option value="">Selecione uma opção</option>
+                    <option value="C">Casado</option>
+                    <option value="S">Solteiro</option>
+                </select>
+                <br>
+
+
+                <button type="submit" class="btn-submit">
+                    Enviar
+
+                </button>
+                <button type="reset" class="btn-reset">
+                    Redefinir
+
+                </button>
+
+
+
+
+
+            </form>
+
+        </div>
+
 
     </main><!--Final area do menu principal-->
 
@@ -37,9 +77,9 @@
 
     <footer><!--Começo do rodapé-->
         <p>Todos os direitos reservados<br>
-        Desenvolvido por Bruno Da Silva Salles</p>
+            Desenvolvido por Bruno Da Silva Salles</p>
 
-        
+
 
     </footer><!--Fim do rodapé-->
 </body>
