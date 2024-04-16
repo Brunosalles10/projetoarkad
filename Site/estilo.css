@@ -215,6 +215,12 @@ select {
     background: black;
 }
 
+.text-area{
+    
+    display: block;
+    margin: auto;
+}
+
 
 
 
@@ -231,5 +237,23 @@ select {
     aside {
         width: 100%;
     }
+
+    .mobile{
+        display: block;
+        margin: auto;
+        width: 70%;
+        padding: 5px;
+
+    }
+
+    .mobile-coluna{
+        padding: 5px;
+    
+    }
+    iframe{
+        width: 70%;
+        height: 300px;
+    }
+
 
 }
