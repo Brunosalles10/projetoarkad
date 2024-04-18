@@ -1,6 +1,9 @@
 #PROJETO THE ARKAD
+
 ##SEMANA 1
+
 ###HTML (Head, body, H, P, IMG)
+
 ###CSS (formatação inicial)
 
 ##SEMANA 2
